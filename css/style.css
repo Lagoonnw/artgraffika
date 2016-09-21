@@ -1019,5 +1019,91 @@ h1 {
   color: #ffffff;
 }
 
+/* проекты */
 
+.portfolio-slider_style {
+  width: 100%;
+  height: 700px;
+  padding-top: 100px;
+  
+  overflow: hidden;
+}
 
+.portfolio-slider__item {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/slider/2WxRoGMoH4o.jpg");
+  background-position: center;
+}
+
+.breadcrumbs-style {
+  height: 50px;
+  background: #eaeaea;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.breadcrumbs-list-style {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.breadcrumbs-list-item-style,
+.breadcrumbs-list-item-style-active {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 20px;
+  margin-top: 12px;
+  padding-right: 25px;
+  position: relative;
+}
+.breadcrumbs-list-item-style::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background: #f58220;
+  border-radius: 50%;
+}
+
+.breadcrumbs-list-item-style a {
+  color: #f58220;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.breadcrumbs-list-item-style a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs-list-item-style-active a {
+  color: #6d6e71;
+}
+
+.l-col {
+  float: left;
+  margin-right: 10px;
+}
+
+.r-col {
+  float: right;
+  margin-left: 10px;
+}
+
+.client-logo-style {
+  margin-top: 30px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+  transition-duration: 0.3s;
+}
+
+.client-logo-style:hover {
+  border-radius: 0;
+} 
