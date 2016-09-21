@@ -6,11 +6,75 @@ body {
 }
 
 h1 {
-  font-family: "Gilroy", "Tahoma", sans-serif;
+  /*font-family: "Gilroy", "Tahoma", sans-serif;*/
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 48px;
   line-height: 48px;
-  font-weight: 300;
+  /*font-weight: 300;*/
+  font-weight: 700;
   color: #f58220;
+}
+
+h2 {
+  /*font-family: "Gilroy", "Tahoma", sans-serif;*/
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  /*font-weight: 300;*/
+  font-weight: 700;
+  color: #6d6e71;
+  margin-bottom: 20px;
+}
+
+h3 {    
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  /*font-weight: 300;*/
+  font-weight: 700;
+  color: #6d6e71;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;  
+  color: #6d6e71;
+  margin-bottom: 15px;  
+}
+
+.textpage_style ul {
+  padding: 0;
+  margin: 0;
+}
+
+.textpage_style ul li {
+  list-style: none;
+  padding-left: 30px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.textpage_style ul li:last-child {
+  margin-bottom: 30px;
+}
+
+.textpage_style ul li::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  background: #f58220;
+}
+
+
+figcaption {
+ color: #f58220;
+ 
 }
 
 .wrapper {
@@ -1025,20 +1089,83 @@ h1 {
   width: 100%;
   height: 700px;
   padding-top: 100px;
-  
+  background-image: url("../img/slider/2WxRoGMoH4o.jpg");
+  background-position: center;
   overflow: hidden;
 }
 
 .portfolio-slider__item {
   width: 100%;
-  height: 100%;
-  background-image: url("../img/slider/2WxRoGMoH4o.jpg");
-  background-position: center;
+  height: 100%;  
 }
 
+
+
+.l-col {
+  float: left;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.r-col {
+  float: right;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.client-logo-style {
+  margin-top: 30px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  transition-duration: 0.3s;
+}
+
+.client-about-style:hover .client-logo-style {
+  border-radius: 0;
+} 
+
+.client-about-info_style {
+  display: table;  
+  padding: 10px;
+  min-height: 30px;
+  background-color: transparent;
+  transition: background 0.3s;
+  width: 260px;
+  
+}
+
+.client-about-info_style p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  
+}
+
+.client-about-style {
+  background-color: transparent;
+  transition: background 0.3s;  
+}
+
+.client-about-style:hover {
+  background: #eaeaea;  
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+.lead-team-style {
+  margin-left: 30px;
+}
+.lead-team__h2_style {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  color: #f58220;
+}
+
+/*хлебные крошки*/
 .breadcrumbs-style {
   height: 50px;
-  background: #eaeaea;
+  background: #2c2c2c;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -1082,28 +1209,49 @@ h1 {
 }
 
 .breadcrumbs-list-item-style-active a {
-  color: #6d6e71;
+  color: #ffffff;
 }
 
-.l-col {
-  float: left;
-  margin-right: 10px;
-}
-
-.r-col {
-  float: right;
-  margin-left: 10px;
-}
-
-.client-logo-style {
-  margin-top: 30px;
-  height: 280px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+.project-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  background: #eaeaea;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   transition-duration: 0.3s;
 }
 
-.client-logo-style:hover {
-  border-radius: 0;
-} 
+.project-btn:hover {
+  background: #f58220;
+  color: #ffffff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
+}
+
+.project-btn:active {
+  box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
+}
+
+.back-button_style {
+  display: inline-block;
+  background-color: transparent;
+  margin: 40px auto;
+  padding: 10px 50px;
+  transition-duration: 0.3s;  
+  color: #f58220;
+  
+}
+
+.back-button_style:hover {
+  color: #ffffff;
+  background: #f58220;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+.back-button_style:active {
+  box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
+  text-decoration: none;
+}
