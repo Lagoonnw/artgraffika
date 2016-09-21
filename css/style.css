@@ -811,6 +811,7 @@ h1 {
 
 .project-list-style {
   font-size: 0;
+  margin-top: 40px;
 }
 
 .project-style {
@@ -845,7 +846,7 @@ h1 {
 }
 
 .project-style:hover .project-item__img-style {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .project-item-style {
@@ -859,8 +860,7 @@ h1 {
 .project-item-over-style {
   position: absolute;
   width: 220px;
-  height: 220px;  
-  background-color: rgba(44, 44, 44, 0.9);
+  height: 220px;    
   left: 50%;
   top: 50%;
   margin-left: -110px;
@@ -883,6 +883,12 @@ h1 {
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
+  animation: prj-info 0.3s forwards;
+}
+
+@keyframes prj-info {
+  from {transform: scale(1.2);}  
+  to {transform: scale(1);}
 }
 
 /*пагинация*/
