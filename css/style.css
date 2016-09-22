@@ -1255,3 +1255,76 @@ figcaption {
   box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
   text-decoration: none;
 }
+
+/*выпадающее меню*/
+.drop-down-menu_style {
+  
+  height: auto;
+  font-size: 0;  
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  margin-left: -600px;
+  background: rgba(44, 44, 44, 0.7);
+}
+
+.drop-down-menu-col_style {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 10px;
+  width: 240px;
+  padding: 20px;
+}
+
+.drop-down-menu-col_style:nth-child(n+4) {
+  margin-right: 0;
+}
+.drop-down-menu-col_style:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+.drop-down-menu-col__sec_style {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+.drop-down-menu-col__sec_style:hover {
+  color: #f58220;
+}
+
+
+.drop-down-menu-col__sec-list_style {
+  padding: 0;
+}
+
+.drop-down-menu-col__sec-list_style li {
+  list-style: none;
+  padding: 5px 0 0 35px; 
+  position: relative;
+  text-decoration: none;
+}
+
+.drop-down-menu-col__sec-list_style li::before {
+  content: "";
+  position: absolute;
+  background: #ffffff;
+  width: 20px;
+  height: 2px;
+  left: 0;
+  top: 15px;
+}
+
+.drop-down-menu-col__sec-list_style li a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.7;
+  transition-duration: 0;
+}
+
+.drop-down-menu-col__sec-list_style li a:hover {
+  opacity: 1;  
+}
