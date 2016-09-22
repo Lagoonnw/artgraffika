@@ -1265,7 +1265,23 @@ figcaption {
   left: 50%;
   top: 100px;
   margin-left: -600px;
-  background: rgba(44, 44, 44, 0.7);
+  background: rgba(44, 44, 44, 0.9);
+  display: none;
+  z-index: -500;
+  
+}
+
+.drop-down-menu_style-show {
+  display: block;
+  animation: dropmenu 0.7s;
+  
+}
+
+@keyframes dropmenu {
+  0% {transform: translateY(-2000px);}
+  /*70% {transform: translateY(130px;)}
+  90% {transform: translateY(100px);}*/
+  100% {transform: translateY(0);}
 }
 
 .drop-down-menu-col_style {
@@ -1327,4 +1343,81 @@ figcaption {
 
 .drop-down-menu-col__sec-list_style li a:hover {
   opacity: 1;  
+}
+
+.search-close-style {
+  border-top: 1px solid #6d6e71;
+}
+
+.search-close-form_style {
+  border-color: #f58220;
+  outline: none;  
+  border-radius: 3px;
+  margin: 30px 20px;
+  background: #eaeaea;
+  opacity: 0.7;
+  height: 40px;
+  padding-left: 40px;
+  box-shadow: none;  
+}
+
+.search-close-form_style:focus {  
+  opacity: 1;
+  outline: none;
+  box-shadow: none;
+}
+
+.search-close-style input[placeholder] {
+  font-size: 18px;  
+}
+
+.search-close-style form {
+  position: relative;
+  float: left;
+}
+.search-icon {
+  position: absolute;
+  content: "";  
+  left: 27px;
+  top: 36px;  
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/sprite.png");
+  background-position: 0 -974px;
+}
+.close-menu_style {
+  border: 2px solid #f58220;
+  width: 35px;
+  height: 35px;
+  display: block;
+  float: right;
+  margin: 30px 20px;
+  position: relative;
+  cursor: pointer;
+  background: none;
+  outline: none;
+}
+
+.close-menu_style::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #f58220;
+  transform: rotate(45deg);
+  top: 14px;
+  left: 1px;
+  cursor: pointer;
+}
+
+.close-menu_style::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #f58220;
+  transform: rotate(-45deg);
+  top: 14px;
+  left: 1px;
+  cursor: pointer;
 }
