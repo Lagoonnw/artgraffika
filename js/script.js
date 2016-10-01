@@ -4,14 +4,11 @@ var menuicon = document.querySelector(".header-nav__icon");
 var dropmenu = document.querySelector(".drop-down-menu");
 var close = document.querySelector(".close-menu");
 
- 
-
 
 link.addEventListener("click", function (event) {
   event.preventDefault();
   map.classList.add("map-js_style-show");    
 });
-
 
 
 menuicon.addEventListener("click", function (event) {
@@ -22,7 +19,6 @@ menuicon.addEventListener("click", function (event) {
 close.addEventListener("click", function (event) {
   event.preventDefault();
   dropmenu.classList.remove("drop-down-menu_style-show");   
- 
 });
 
 window.addEventListener("keydown", function (event) {
@@ -32,4 +28,5 @@ window.addEventListener("keydown", function (event) {
     }
   }
 });
-                             
+
+

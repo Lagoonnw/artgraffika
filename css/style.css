@@ -71,7 +71,51 @@ h4 {
   background: #f58220;
 }
 
+.textpage_style table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid #f58220;
+  margin-bottom: 30px;
+}
+.textpage_style td, 
+.textpage_style td {
+  border: 1px solid #f58220;
+  padding: 10px 20px;
+  border-collapse: collapse;
+}
 
+.textpage_style p a {
+  transition-duration: 0.3s;
+  color: #f58220;
+}
+
+.textpage_style p a:hover {
+  color: #f58220;
+  text-decoration: none;
+}
+
+.textpage_style p a:visited {
+  color: #a7c1cb;
+}
+
+.textpage_style blockquote {
+  background: #f58220;
+  color: #ffffff;
+  padding: 20px 20px 20px 60px;
+  position: relative;
+}
+
+.textpage_style blockquote::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 34px;
+  background-image: url("../img/sprite.png");
+  background-position: 0 -1025px;
+  top: 20px;
+  left: 15px;
+}
 
 
 figcaption {
@@ -1385,7 +1429,7 @@ figcaption {
   width: 30px;
   height: 30px;
   background-image: url("../img/sprite.png");
-  background-position: 0 -974px;
+  background-position: 0 -987px;
 }
 .close-menu_style {
   border: 2px solid #f58220;
