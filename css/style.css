@@ -591,9 +591,11 @@ figcaption {
   margin: 0 10px;
   cursor: pointer;
   transition-duration: 0.3s;
+  margin-bottom: 20px;
+  vertical-align: top;
 }
 
-.shares-items__item_style:first-child {
+.shares-items__item_style:nth-child(n+3n) {
   margin-left: 0;
 }
 
@@ -623,7 +625,13 @@ figcaption {
   max-height: 200px;
   overflow: hidden;
 }
-
+.shares-items__item_style span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+  
+}
 .shares-items__btn_style {
   display: inline-block;
   width: 100%;
