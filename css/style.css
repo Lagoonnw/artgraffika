@@ -1674,7 +1674,108 @@ figcaption {
   text-decoration: none;
 }
 
+.modal-content {
+  position: fixed;
+  z-index: 500;
+  top: 30%;
+  left: 50%;
+  background-color: #ffffff;
+  margin-left: -290px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
 
+.modal-content label {
+  display: block;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;  
+}
+.modal-content span {
+  display: block;
+}
+
+.write-us-field,
+.write-us-text {
+  width: 100%;
+}
+
+.write-us-field:focus,
+.write-us-text:focus {
+  border: 1px solid #f58220;
+  outline: none;  
+  
+}
+.model-content-btn {
+  position: absolute;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;  
+  background-color: #f58220; 
+  top: 0;
+  right: 0;  
+  cursor: pointer;
+}
+
+.model-content-btn::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  margin-top: -10px;
+  margin-right: -1px;
+  cursor: pointer;
+}
+
+.model-content-btn::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+  margin-top: -10px;
+  margin-right: -1px;
+  cursor: pointer;
+}
+
+.write-us-head {
+  margin-left: 5%;
+  text-align: center;
+  color: #f58220;
+  font-weight: 400;
+}
+
+.write-us-btn {
+  margin-left: 5%;
+  margin-right: 5%;  
+  margin-bottom: 5%;
+  width: 90%;
+  border: none;
+  background-color: #f58220;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 2% 0;
+  transition: 0.2s;
+}
+
+.write-us-btn:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.write-us-btn:active {
+  box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
 /*.side-menu-lev2_style-show {
   display: block;
 }*/
