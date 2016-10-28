@@ -198,6 +198,46 @@
         </section>
       </div>
     </footer>
+    <!-- модальное окно -->
+    <div class="modal-content col-6">
+      <button class="model-content-btn" type="button" title="закрыть">закрыть</button>
+      <form class="write-us" method="post" id="write-us">
+       <h2 class="write-us-head">Отправьте нам вашу заявку</h2>
+        <label for="write-name">
+          <span class="write-us-span">Ваше имя:</span> 
+          <input class="write-us-field" type="text" name="write-name" id="write-name" placeholder="Представьтесь, пожалуйста">
+        </label>    
+        <label for="write-phone">
+          <span class="write-us-span">Ваш номер телефона:</span> 
+          <input class="write-us-field" type="tel" name="write-name" id="write-name" placeholder="+7 900 000 00 00">
+        </label>   
+        <label for="write-phone">
+          <span class="write-us-span">Ваш электронный адрес:</span> 
+          <input class="write-us-field" type="email" name="write-name" id="write-name" placeholder="email@mail.com">
+        </label>   
+        <label for="mail-text">
+          <span class="write-us-span">Текст заявки:</span>
+          <textarea class="write-us-text" form="write-us" name="mail-text" id="mail-text">В свободной форме</textarea> 
+        </label>  
+        <label class="brief">
+          <span class="write-us-brief">Отправить бриф</span>    
+          
+          <select class="brief-select brief-select_style">
+            <option>Бриф на разработку логотипа</option>
+            <option>Бриф на разработку гайдбука/гайдлайна</option>
+            <option>Бриф на разработку брендбука</option>
+            <option>Бриф на разработку сайта</option>
+            <option>Бриф на разработку лендинга</option>
+            <option>Бриф на продвижение</option>
+          </select>
+        </label>
+        <label class="check-brief">
+          <input type="checkbox" id="send-breaf" class="checkbox" checked>
+          <span class="checkbox-indicator"></span>
+        </label>  
+        <button class="write-us-btn" type="submit">отправить</button>    
+      </form>
+    </div>
 
   <!-- JS scripts-->
   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=TQTGqB6jAalNS4o4sQZxT66dWHxfsEe5&amp;width=100%&amp;height=500&id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
