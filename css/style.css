@@ -12,7 +12,7 @@ h1 {
   line-height: 48px;
   /*font-weight: 300;*/
   font-weight: 700;
-  color: #f58220;
+  color: #1a1a1a;  
 }
 
 h2 {
@@ -22,7 +22,7 @@ h2 {
   line-height: 40px;
   /*font-weight: 300;*/
   font-weight: 700;
-  color: #6d6e71;
+  color: #1a1a1a;
   margin-bottom: 20px;
 }
 
@@ -32,7 +32,7 @@ h3 {
   line-height: 36px;
   /*font-weight: 300;*/
   font-weight: 700;
-  color: #6d6e71;
+  color: #1a1a1a;
   margin-bottom: 20px;
 }
 
@@ -40,8 +40,8 @@ h4 {
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;  
-  color: #6d6e71;
+  font-weight: 300;  
+  color: #f58220;
   margin-bottom: 15px;  
 }
 
@@ -1086,7 +1086,7 @@ figcaption {
 }
 
 .paginator-list__item-style-next:hover {
-  background-color: #eaeaea;
+  background-color: #f58220;
 }
 .paginator-list__item-style-prev::before {
   content: "";
@@ -1121,6 +1121,17 @@ figcaption {
   transform: rotate(45deg); 
   transition-duration: 0.3s;
 }
+.paginator-list__item-style-next:hover::before {
+  content: "";
+  position: absolute;
+  right: 7px;
+  top: 9px;
+  width: 15px;
+  height: 3px;
+  background: #ffffff;
+  transform: rotate(45deg); 
+  transition-duration: 0.3s;
+}
 
 .paginator-list__item-style-next::after {
   content: "";
@@ -1133,6 +1144,19 @@ figcaption {
   transform: rotate(-45deg); 
   transition-duration: 0.3s;
 }
+
+.paginator-list__item-style-next:hover::after {
+  content: "";
+  position: absolute;
+  right: 7px;
+  top: 18px;
+  width:15px;
+  height: 3px;
+  background: #ffffff;
+  transform: rotate(-45deg); 
+  transition-duration: 0.3s;
+}
+
 
 .paginator-list__item-style-prev-disabled {
   border-color: #eaeaea;
@@ -1156,11 +1180,11 @@ figcaption {
 
 .portfolio-slider_style {
   width: 100%;
-  height: 700px;
+  height: 300px;
   padding-top: 100px;
   background-image: url("../img/slider/2WxRoGMoH4o.jpg");
   background-position: center;
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 .portfolio-slider__item {
@@ -1228,13 +1252,13 @@ figcaption {
   font-size: 22px;
   font-weight: 300;
   margin-bottom: 0px;
-  color: #f58220;
+  color: #1a1a1a;
 }
 
 /*хлебные крошки*/
 .breadcrumbs-style {
   height: 50px;
-  background: #2c2c2c;
+  background: #1a1a1a;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -1690,7 +1714,7 @@ figcaption {
 .modal-content {
   position: fixed;
   z-index: 500;
-  top: 30%;
+  top: 17%;
   left: 50%;
   background-color: #ffffff;
   margin-left: -290px;
