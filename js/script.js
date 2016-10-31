@@ -8,6 +8,7 @@ var form = document.querySelector(".modal-content");
 var btnclose = form.querySelector(".model-content-btn");
 var offer = document.querySelector("#offer");
 
+
 link.addEventListener("click", function (event) {
   event.preventDefault();
   map.classList.add("map-js_style-show");    
@@ -34,18 +35,18 @@ window.addEventListener("keydown", function (event) {
 
 linkform.addEventListener("click", function (event) {
   event.preventDefault();
-  form.classList.add("modal-content-show");    
+  form.classList.add("modal-content-show");   
 });
 
 btnclose.addEventListener("click", function (event) {
   event.preventDefault();
-  form.classList.remove("modal-content-show");   
+  form.classList.remove("modal-content-show");    
 });
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {
     if (dropmenu.classList.contains("modal-content-show")) {
-      dropmenu.classList.remove("modal-content-show");
+      dropmenu.classList.remove("modal-content-show");      
     }
   }
 });
@@ -54,3 +55,4 @@ offer.addEventListener("click", function (event) {
   event.preventDefault();
   form.classList.add("modal-content-show");    
 });
+

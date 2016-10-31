@@ -691,7 +691,7 @@ h4 {
   line-height: 50px;
   transition-duration: 0.2s;
 }
-.useful__btn_style:hover {
+.useful-items section:hover .useful__btn_style {
   box-shadow: 0px 0px 5.64px 0.36px rgba(0, 0, 0, 0.30);
   background: #d76300;
 }
@@ -713,9 +713,9 @@ h4 {
 .page-footer-menu-section_style {
   display: inline-block;
   vertical-align: top;
-  width: 30%;
+  width: 25%;
   font-size: 16px;   
-  margin-left: 3%;
+  */margin-left: 1%;
 }
 .page-footer-copyrights-socials_style {
   font-size: 0;
@@ -1591,6 +1591,24 @@ h4 {
   cursor: pointer;
 }
 
+.search-close-links {
+  float: left;
+  font-size: 16px;
+  padding-top: 35px; 
+  margin-left: 30px;
+}
+
+.search-close-links a {
+  padding-right: 15px;
+  text-decoration: none;
+  color: #f58220;
+  transition: 0.3s;
+}
+
+.search-close-links a:hover {
+  text-decoration: underline;
+}
+
 .main_style {
   padding-top: 100px;
 }
@@ -1805,8 +1823,6 @@ h4 {
 .modal-content-show {
   display: block;
 }
-
-
 .modal-content label {
   display: block;
   margin-left: 5%;
@@ -1973,6 +1989,78 @@ h4 {
   transform: rotate(-45deg); 
   cursor: pointer;
 }
-/*.side-menu-lev2_style-show {
+
+
+/* поиск по сайту */
+
+.search-bar_style {
+  margin: 30px auto;
+}
+
+.search input {
+  width: 80%;
+  border-color: 1px solid #1a1a1a;
+}
+
+.search input:focus {
+  outline: none;
+  border-color: #f58220;
+}
+
+.seach-btn_style {
+  width: 15%;  
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 3px;
+  background: #f58220;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.seach-btn_style:hover {
+  color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.seach-btn_style:active {
+  box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.20);
+}
+
+/* 404 error*/
+.error-404-bg {  
+  background-image: url("../img/bg.jpg");
+  background-repeat: none;
+}
+
+.error-404-logo {
+  margin: 20% auto 5%;
+}
+.error-404-h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #1a1a1a;
+}
+.error-404-btn_style {
   display: block;
-}*/
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+  border: 2px solid #f58220;
+  text-decoration: none;
+  color: #f58220;
+  font-weight: 700;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  transition: 0.4s;
+}
+
+.error-404-btn_style:hover {
+  background: #f58220;
+  color: #1a1a1a;
+}
