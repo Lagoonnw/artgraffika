@@ -6,6 +6,7 @@ var close = document.querySelector(".close-menu");
 var linkform = document.querySelector("#linkform");
 var form = document.querySelector(".modal-content");
 var btnclose = form.querySelector(".model-content-btn");
+var offer = document.querySelector("#offer");
 
 link.addEventListener("click", function (event) {
   event.preventDefault();
@@ -47,4 +48,9 @@ window.addEventListener("keydown", function (event) {
       dropmenu.classList.remove("modal-content-show");
     }
   }
+});
+
+offer.addEventListener("click", function (event) {
+  event.preventDefault();
+  form.classList.add("modal-content-show");    
 });
